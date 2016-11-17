@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename source module &apos;ztag.zlmgroup.inc.php&apos; to &apos;zlmroom.inc.php&apos;&#x0D;&#x0A;- Original element: &apos;ztag\zlmgroup.inc.php&apos;&#x0D;&#x0A;- Renamed element: &apos;ztag\zlmroom.inc.php&apos;" description="Rename source module &apos;zlmgroup.inc.php&apos;" flags="589830" id="org.eclipse.dltk.ui.rename.sourcemodule" input="/&lt;ztag{zlmgroup.inc.php" name="zlmroom.inc.php" stamp="1301499661375" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+					<?php require_once('showTime.inc.php'); ?>
+					<?php require_once('showClima.inc.php'); ?>
+					<div id="subBloco"><b class="first">terça-feira</b><br><b>26</b> de abril de 2011</div>
+					<div style="background:url(http://img.ecr.me/d2/tempo_icons/chuva-fraca.png) 3px top no-repeat;" class="tempo" id="subBloco"><b>Distrito Federal</b><br><b class="tempo-qnt">Min: 16º, Max: 28º</b><br><style>.small-clima-texto {line-height:20px; width:200px;}.small-clima-texto:hover {line-height:12px;display:block; position:absolute; background:#fff;; border:#999 1px solid;z-index:5642; padding:5px;}</style><small class="small-clima-texto">Claro a Parcialmente Nublado. a Umidade Relativa do Ar Estará Variando Entre 85 e 30 por Cento.</small></div>

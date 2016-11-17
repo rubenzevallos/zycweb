@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;/LugarMedico/error/e404.ztag&apos; to &apos;error.ztag&apos;&#x0D;&#x0A;- Original element: &apos;e404.ztag&apos;" description="Rename resource &apos;e404.ztag&apos;" flags="7" id="org.eclipse.dltk.ui.rename.resource" input="error/e404.ztag" name="error.ztag" stamp="1301973277694" version="1.0"/>
+</session>

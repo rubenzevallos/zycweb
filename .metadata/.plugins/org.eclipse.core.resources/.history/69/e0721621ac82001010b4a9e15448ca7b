@@ -1,0 +1,46 @@
+<?php
+header('Content-Type: '.$siteContentType.'; charset='.$siteCharSet, true);
+
+while ($jnRow = mysql_fetch_object($justicaNews)) {
+	$rdfLI .= "<rdf:li rdf:resource=\"$jnRow->ds_url\"/>";
+}
+
+echo '<?xml version="1.0" encoding="'.$siteEncoding.'"?'.'>'; ?>
+<rdf:RDF
+	xmlns="http://purl.org/rss/1.0/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:admin="http://webns.net/mvcb/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel rdf:about="<?php echo $siteURL; ?>">
+	<title><?php echo $siteTitle; ?></title>
+	<link><?php echo $siteURL; ?></link>
+	<description><?php echo $siteDescription; ?></description>
+	<dc:date><?php echo date('Y-m-d\TH:i:s\Z', strtotime($jnRow->dt_referenciah)); ?></dc:date>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<sy:updateBase>2000-01-01T12:00+00:00</sy:updateBase>
+	<admin:generatorAgent rdf:resource="http://www.direito2.com.br/" />
+	<items>
+		<rdf:Seq>
+		<?php echo $rdfLI ?>
+		</rdf:Seq>
+	</items>
+</channel>
+<?php echo $rdfItem ?>
+
+<item rdf:about="<?php the_permalink_rss() ?>">
+	<title><?php the_title_rss() ?></title>
+	<link><?php the_permalink_rss() ?></link>
+	 <dc:date><?php echo mysql2date('Y-m-d\TH:i:s\Z', $post->post_date_gmt, false); ?></dc:date>
+	<dc:creator><?php the_author() ?></dc:creator>
+	<?php the_category_rss('rdf') ?>
+	<?php if (get_option('rss_use_excerpt')) : ?>
+	<description><?php the_excerpt_rss() ?></description>
+	<?php else : ?>
+	<description><?php the_excerpt_rss() ?></description>
+	<content:encoded><![CDATA[<?php the_content_feed('rdf') ?>]]></content:encoded>
+	<?php endif; ?>
+	<?php do_action('rdf_item'); ?>
+</item>

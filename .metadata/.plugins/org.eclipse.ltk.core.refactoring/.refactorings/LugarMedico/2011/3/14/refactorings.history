@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;/LugarMedico/communityHome.html&apos; to &apos;communityHome.ztag&apos;&#x0D;&#x0A;- Original element: &apos;communityHome.html&apos;" description="Rename resource &apos;communityHome.html&apos;" flags="7" id="org.eclipse.dltk.ui.rename.resource" input="communityHome.html" name="communityHome.ztag" stamp="1301612349976" version="1.0"/>
+</session>

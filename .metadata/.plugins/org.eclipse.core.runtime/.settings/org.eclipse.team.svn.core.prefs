@@ -1,0 +1,5 @@
+#Mon Apr 11 14:03:41 BRT 2011
+eclipse.preferences.version=1
+externalMigrateFromAuthorizationDatabase/isMigrated=true
+repositories/60e3349d5d6400101f21d32f22eb92b2=60e3349d5d6400101f21d32f22eb92b2;http\://svn.d2.net.br\:8023/svn/d2merlim;http\://svn.d2.net.br\:8023/svn/d2merlim;branches;tags;trunk;true;;;;false;;;0
+migrateFromAuthorizationDatabase/isMigrated=true

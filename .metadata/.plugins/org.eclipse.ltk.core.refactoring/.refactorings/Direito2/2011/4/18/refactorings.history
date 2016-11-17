@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;/Direito2/listEditoria.ztag&apos; to &apos;listSource.ztag&apos;&#x0D;&#x0A;- Original element: &apos;listEditoria.ztag&apos;" description="Rename resource &apos;listEditoria.ztag&apos;" flags="7" id="org.eclipse.dltk.ui.rename.resource" input="listEditoria.ztag" name="listSource.ztag" stamp="1303701896387" version="1.0"/>&#x0A;<refactoring comment="Rename resource &apos;/Direito2/font.html&apos; to &apos;font.ztag&apos;&#x0D;&#x0A;- Original element: &apos;font.html&apos;" description="Rename resource &apos;font.html&apos;" flags="7" id="org.eclipse.dltk.ui.rename.resource" input="font.html" name="font.ztag" stamp="1303977030934" version="1.0"/>
+</session>
